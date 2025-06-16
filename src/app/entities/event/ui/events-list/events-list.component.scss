@@ -1,0 +1,34 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  font-size: 2rem;
+  color: var(--black);
+
+  &-item {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: var(--orange);
+    }
+  }
+
+  &-title {
+    flex: 1;
+  }
+
+  &-date {
+    width: fit-content;
+  }
+
+  &-link {
+    width: 3rem;
+    height: 3rem;
+  }
+}

@@ -1,0 +1,61 @@
+<form [formGroup]="eventForm" class="event-form">
+  <syncro-text-input
+    class="event-title"
+    formControlName="title"
+    [placeholder]="'Event Title'"
+  ></syncro-text-input>
+
+  <!-- Days -->
+  <h3 class="event-subtitle">Select days</h3>
+
+  <div class="divider"></div>
+
+  <syncro-button-toggle
+    formControlName="days"
+    [options]="days"
+    [multi]="true"
+  ></syncro-button-toggle>
+
+  <div class="event-row">
+    <syncro-date-picker label="Date From" formControlName="startDate"></syncro-date-picker>
+
+    <syncro-date-picker label="Date To" formControlName="endDate"></syncro-date-picker>
+  </div>
+
+  <!-- Time -->
+  <h3 class="event-subtitle">Select time</h3>
+
+  <div class="divider"></div>
+
+  <div class="event-row">
+    <syncro-toggle-input label="Set time" formControlName="isSetTime"></syncro-toggle-input>
+
+    <syncro-button-toggle formControlName="fractions" [options]="fractions"></syncro-button-toggle>
+  </div>
+
+  @if (isSetTime.value) {
+    <div class="event-row">
+      <syncro-time-picker label="From"></syncro-time-picker>
+
+      <syncro-time-picker label="To"></syncro-time-picker>
+    </div>
+  }
+
+  <!-- Details -->
+  <h3 class="event-subtitle">Event details</h3>
+  <div class="divider"></div>
+
+  <div class="event-row">
+    <syncro-toggle-input label="Protected" formControlName="isProtected"></syncro-toggle-input>
+
+    @if (isProtected.value) {
+      <syncro-text-input
+        class="event-title"
+        placeholder="Password"
+        formControlName="password"
+      ></syncro-text-input>
+    }
+  </div>
+
+  <syncro-textarea placeholder="Tell more about this event" label="Description"></syncro-textarea>
+</form>

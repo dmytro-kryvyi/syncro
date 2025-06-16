@@ -1,0 +1,7 @@
+<div class="survey">
+  <div class="survey-title">Title</div>
+
+  <syncro-days-matrix-selector [days]="selectedDays()"></syncro-days-matrix-selector>
+
+  <syncro-calendar-selector (daysSelected)="onDaysSelected($event)"></syncro-calendar-selector>
+</div>

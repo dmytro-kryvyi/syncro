@@ -1,0 +1,9 @@
+<div class="survey">
+  @if (step() === "password") {
+    <syncro-enter-password (submit)="onSubmitPassword($event)"></syncro-enter-password>
+  } @else if (step() === "select") {
+    <syncro-fast-options (selected)="onSelectedOption($event)"></syncro-fast-options>
+  } @else if (step() === "calendar") {
+    <syncro-take-survey></syncro-take-survey>
+  }
+</div>

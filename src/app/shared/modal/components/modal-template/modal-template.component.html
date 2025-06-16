@@ -1,0 +1,20 @@
+<div class="modal">
+  <ng-content select="[modalHeader]"></ng-content>
+  @if (title()) {
+    <div class="modal-header">
+      <h2 class="modal-title">{{ title() }}</h2>
+
+      <button class="modal-close" (click)="closeModal()">
+        <syncro-icon class="modal-icon" icon="CROSS" type="svg"></syncro-icon>
+      </button>
+    </div>
+  }
+
+  <div class="modal-content">
+    <ng-content select="[modalContent]"></ng-content>
+  </div>
+
+  <div class="modal-actions">
+    <ng-content select="[modalActions]"></ng-content>
+  </div>
+</div>

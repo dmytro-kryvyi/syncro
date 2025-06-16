@@ -1,0 +1,12 @@
+<div #picker class="picker">
+  <input
+    readonly
+    class="picker-value"
+    [value]="selectedDate() | date: 'dd-MM-yyyy'"
+    [placeholder]="getPlaceholder()"
+  />
+
+  <button class="picker-btn">
+    <syncro-icon class="picker-icon" icon="CALENDAR" type="svg" (click)="open()"></syncro-icon>
+  </button>
+</div>

@@ -1,0 +1,12 @@
+<div class="selector" #selector>
+  <input
+    class="selector-value"
+    readonly="true"
+    [value]="selected()?.label"
+    [placeholder]="getPlaceholder()"
+  />
+
+  <button class="selector-open" (click)="open($event)">
+    <syncro-icon class="selector-icon" [icon]="icon()" type="svg"></syncro-icon>
+  </button>
+</div>

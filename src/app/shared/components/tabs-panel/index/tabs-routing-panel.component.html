@@ -1,0 +1,13 @@
+<div class="tabs">
+  <ul class="tabs-list">
+    @for (tab of tabs; track $index) {
+      <li class="tabs-item" [ngClass]="{ active: tab.active() }" (click)="selectTab(tab)">
+        {{ tab.title() }}
+      </li>
+    }
+  </ul>
+
+  <div class="tabs-content">
+    <ng-content></ng-content>
+  </div>
+</div>

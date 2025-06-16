@@ -1,0 +1,30 @@
+:host {
+  display: block;
+  height: 100%;
+}
+
+.tabs {
+  height: 100%;
+
+  &-list {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  &-item {
+    padding: 1rem 2rem;
+    background-color: var(--light-gray);
+    font-size: 2rem;
+
+    &.active {
+      background-color: var(--cyan);
+      color: #fff;
+    }
+  }
+
+  &-content {
+    background-color: rgba(255, 255, 255, 0.604);
+    border-top: 0.3rem solid var(--cyan);
+    height: 100%;
+  }
+}

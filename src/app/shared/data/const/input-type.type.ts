@@ -1,0 +1,15 @@
+export type InputType =
+  | 'text'
+  | 'number'
+  | 'password'
+  | 'email'
+  | 'date'
+  | 'checkbox'
+  | 'radio'
+  | 'file'
+  | 'tel'
+  | 'url'
+  | 'search'
+  | 'time'
+  | 'datetime-local'
+  | 'color';

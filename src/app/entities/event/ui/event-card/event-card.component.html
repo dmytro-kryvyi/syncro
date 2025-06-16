@@ -1,0 +1,35 @@
+<div class="event">
+  <div class="event-block">
+    <h3 class="event-subtitle">Days</h3>
+
+    <div class="event-days">
+      @for (day of event().days; track $index) {
+        <span class="event-day">{{ day }}</span>
+      }
+    </div>
+  </div>
+
+  <div class="event-block">
+    <h3 class="event-subtitle">Date & Time Limits</h3>
+
+    <div class="event-datetime">
+      <div class="event-date">
+        <span class="event-from">From</span>
+        <span class="event-startdate">{{ event().startDate | date: "dd/MM/yyyy" }}</span>
+        <span class="event-to">To</span>
+        <span class="event-startdate">{{ event().endDate | date: "dd/MM/yyyy" }}</span>
+      </div>
+
+      <div class="event-time">
+        <span class="event-starttime">{{ event().startTime }}</span>
+        <span class="event-separator">-</span>
+        <span class="event-endtime">{{ event().endTime }}</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="event-block">
+    <h3 class="event-subtitle">Details</h3>
+    <p class="event-description">{{ event().description }}</p>
+  </div>
+</div>

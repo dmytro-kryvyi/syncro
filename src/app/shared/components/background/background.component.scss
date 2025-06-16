@@ -1,0 +1,215 @@
+.animated-gradient {
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(135deg, #fb9093, #fbc1b1, #ffb3e9, #c1a7fe);
+  background-size: 400% 400%;
+  animation: gradientShift 25s ease infinite;
+  font-family: "Poppins", sans-serif;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.blobs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.blob1 {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(
+    circle,
+    rgba(242, 0, 255, 0.3) 0%,
+    rgb(200, 0, 170, 0.8) 80%
+  );
+  border-radius: 50%;
+  filter: blur(200px);
+  animation: float1 25s ease-in-out infinite;
+  top: calc(var(--i) * 25%);
+  left: calc(var(--i) * 33%);
+}
+
+.blob2 {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(
+    circle,
+    rgba(47, 255, 0, 0.3) 0%,
+    rgb(0, 200, 77, 0.8) 80%
+  );
+  border-radius: 50%;
+  filter: blur(200px);
+  animation: float2 35s ease-in-out infinite;
+  top: calc(var(--i) * 25%);
+  left: calc(var(--i) * 33%);
+}
+
+.blob3 {
+  position: absolute;
+  width: 400px;
+  height: 600px;
+  background: radial-gradient(
+    circle,
+    rgba(0, 157, 255, 0.3) 0%,
+    rgb(0, 143, 200, 0.8) 80%
+  );
+  border-radius: 50%;
+  filter: blur(200px);
+  animation: float3 20s ease-in-out infinite;
+  top: 30%;
+  left: 50%;
+}
+
+.blob4 {
+  position: absolute;
+  width: 800px;
+  height: 400px;
+  background: radial-gradient(
+    circle,
+    rgba(242, 255, 0, 0.377) 0%,
+    rgb(212, 209, 0, 0.8) 80%
+  );
+  border-radius: 50%;
+  filter: blur(200px);
+  animation: float4 20s linear infinite;
+}
+
+.blob5 {
+  position: absolute;
+  width: 800px;
+  height: 400px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 157, 0, 0.3) 0%,
+    rgb(255, 136, 0, 0.8) 80%
+  );
+  border-radius: 50%;
+  filter: blur(200px);
+  animation: float5 30s linear infinite;
+}
+
+.blob6 {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 0, 0, 0.3) 0%,
+    rgb(200, 0, 0, 0.8) 80%
+  );
+  border-radius: 50%;
+  filter: blur(200px);
+  animation: float3 30s linear infinite;
+  bottom: 20%;
+  left: 20%;
+}
+
+@keyframes float1 {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(-15vh) translateX(100vw);
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+}
+
+@keyframes float2 {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  35% {
+    transform: translateY(-100px) translateX(300px);
+  }
+  50% {
+    transform: translateY(-250px) translateX(-300px);
+  }
+  85% {
+    transform: translateY(400px) translateX(100px);
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+}
+
+@keyframes float3 {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  25% {
+    transform: translateY(-30vh) translateX(0);
+  }
+  50% {
+    transform: translateY(-30vh) translateX(30vw);
+  }
+  75% {
+    transform: translateY(0) translateX(30vw);
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+}
+
+@keyframes float4 {
+  0% {
+    bottom: -400px;
+    left: -800px;
+  }
+
+  100% {
+    bottom: 100vh;
+    left: 100vw;
+  }
+}
+
+@keyframes float5 {
+  0% {
+    bottom: -400px;
+    right: -800px;
+  }
+
+  100% {
+    bottom: 100vh;
+    right: 100vw;
+  }
+}
+
+.main-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 1;
+  padding: 2rem;
+  color: #fff;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 100%;
+}

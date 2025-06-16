@@ -1,0 +1,41 @@
+:host {
+  width: 100%;
+}
+
+.link {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 1rem;
+
+  &-text {
+    font-size: 2rem;
+    color: var(--black);
+    padding: 1rem 2rem;
+    flex-grow: 1;
+  }
+
+  &-btn {
+    position: relative;
+    padding-right: 1rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 0.3rem;
+      height: 100%;
+      left: -1rem;
+      top: 10%;
+      height: 80%;
+      border-radius: 0.3rem;
+      background-color: var(--black);
+    }
+  }
+
+  &-icon {
+    width: 3rem;
+    height: 3rem;
+    color: var(--black);
+  }
+}

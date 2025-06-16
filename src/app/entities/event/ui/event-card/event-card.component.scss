@@ -1,0 +1,38 @@
+.event {
+  font-size: 3rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
+
+  &-block {
+    margin-bottom: 1rem;
+  }
+
+  &-days {
+    display: flex;
+    gap: 1rem;
+    color: var(--cyan);
+  }
+
+  &-subtitle {
+    font-size: 3rem;
+    border-bottom: 0.3rem solid var(--white);
+    margin-bottom: 1rem;
+    color: rgb(244, 244, 244);
+  }
+
+  &-datetime {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-date {
+    display: flex;
+    gap: 1rem;
+    color: var(--orange);
+  }
+
+  &-time {
+    display: flex;
+    gap: 1rem;
+  }
+}

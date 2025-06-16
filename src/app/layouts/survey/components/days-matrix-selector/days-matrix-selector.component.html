@@ -1,0 +1,27 @@
+<div class="matrix">
+  <button (click)="test()">test</button>
+
+  @for (group of groups(); track $index) {
+    <div class="matrix-elem">
+      <div class="matrix-group">
+        <div class="matrix-title">
+          {{ group.title }}
+        </div>
+
+        <syncro-time-intervals></syncro-time-intervals>
+      </div>
+
+      <div class="matrix-list">
+        @for (day of group.days; track $index) {
+          <div class="matrix-item">
+            <div class="matrix-date">
+              {{ day | date: "dd.MM" }}
+            </div>
+
+            <syncro-time-intervals></syncro-time-intervals>
+          </div>
+        }
+      </div>
+    </div>
+  }
+</div>

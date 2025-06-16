@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+@use "typography/styles/index.scss";
+
+html {
+  font-size: 62.5%; /* 1rem = 10px (for easier calculations) */
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  height: 100vh;
+  font-family: "Baloo 2", sans-serif;
+}

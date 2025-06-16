@@ -1,0 +1,11 @@
+<syncro-tabs-panel>
+  <syncro-tab title="Upcoming" route="upcoming">
+    <syncro-events-list [events]="events" (eventClick)="onEventClick($event)"></syncro-events-list>
+  </syncro-tab>
+
+  <syncro-tab title="My Events" route="my">
+    <syncro-empty text="You have not created any events yet"></syncro-empty>
+  </syncro-tab>
+
+  <syncro-tab title="All" route="all"></syncro-tab>
+</syncro-tabs-panel>

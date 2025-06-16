@@ -1,0 +1,9 @@
+<div class="dropdown">
+  <ul class="dropdown-list">
+    @for (option of options(); track $index) {
+      <li class="dropdown-item" (click)="onSelect(option)">
+        {{ option.label }}
+      </li>
+    }
+  </ul>
+</div>

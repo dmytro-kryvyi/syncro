@@ -1,0 +1,26 @@
+:host {
+  width: 100%;
+}
+
+.selector {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 6.2rem;
+  background-color: #fe9642;
+  border: 2px solid #fe8945;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+
+  &-value {
+    flex-grow: 1;
+    font-size: 3rem;
+    width: 100%;
+    color: #fff;
+  }
+
+  &-icon {
+    width: 3rem;
+    height: 3rem;
+  }
+}

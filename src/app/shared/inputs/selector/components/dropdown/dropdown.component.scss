@@ -1,0 +1,20 @@
+.dropdown {
+  font-size: 3rem;
+  max-height: 30rem;
+  overflow: auto;
+  background-color: white;
+  border: 0 0 0.5rem 0.5rem;
+
+  &-item {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    transition: all 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #c5c5c5;
+    }
+  }
+}

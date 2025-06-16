@@ -1,0 +1,33 @@
+:host {
+  display: block;
+  width: 100%;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 3rem;
+  color: white;
+
+  &-btn {
+    padding: 1rem 2rem;
+    background-color: var(--light-gray);
+    border: 2px solid var(--light-gray);
+    flex-grow: 1;
+
+    &.active {
+      background-color: var(--cyan);
+      border-color: var(--cyan-contrast);
+      color: #fff;
+    }
+
+    &:first-child {
+      border-radius: 2rem 0 0 2rem;
+    }
+
+    &:last-child {
+      border-radius: 0 2rem 2rem 0;
+    }
+  }
+}

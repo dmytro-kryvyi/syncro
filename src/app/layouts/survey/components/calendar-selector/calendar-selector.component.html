@@ -1,0 +1,38 @@
+<div class="overlay">
+  <div class="month">
+    <div class="month-value">
+      {{ currentViewDate() | date: "MMMM yyyy" }}
+    </div>
+
+    <div class="actions">
+      <button class="month-action" (click)="onPrevMonth()">
+        <syncro-icon class="month-icon" type="svg" icon="ARROW-LEFT"></syncro-icon>
+      </button>
+
+      <button class="month-action" (click)="onNextMonth()">
+        <syncro-icon class="month-icon" type="svg" icon="ARROW-RIGHT"></syncro-icon>
+      </button>
+    </div>
+  </div>
+
+  <div class="calendar">
+    <div class="calendar-days">
+      @for (name of dayNames; track $index) {
+        <div class="calendar-day">{{ name }}</div>
+      }
+    </div>
+
+    <div class="calendar-days">
+      @for (day of days(); track $index) {
+        <div
+          class="calendar-day"
+          [ngClass]="{ selected: isSelected(day) }"
+          (click)="selectDay(day)"
+          (keydown)="selectDay(day)"
+        >
+          {{ day }}
+        </div>
+      }
+    </div>
+  </div>
+</div>
