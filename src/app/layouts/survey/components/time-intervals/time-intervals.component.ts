@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { TimeIntervalsModalComponent } from 'app/layouts/survey/components/time-intervals-modal/time-intervals-modal.component';
-import { IconComponent } from 'app/shared/components/icon/icon.component';
+import { IconComponent } from 'app/shared/components/icon-wrapper/icon.component';
 import { ModalService } from 'app/shared/services/modal/modal.service';
 
 @Component({

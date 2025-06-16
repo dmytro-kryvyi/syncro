@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, input, InputSignal } from '@angular/core';
-import { IconComponent } from 'app/shared/components/icon/icon.component';
+import { IconComponent } from 'app/shared/components/icon-wrapper/icon.component';
 
 @Component({
   selector: 'syncro-event-link',

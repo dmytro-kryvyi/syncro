@@ -1,10 +1,4 @@
-import {
-  ChangeDetectionStrategy,
-  Component,
-  inject,
-  OnInit,
-  output,
-} from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject, OnInit, output } from '@angular/core';
 import {
   FormControl,
   FormGroup,
@@ -13,14 +7,14 @@ import {
 } from '@angular/forms';
 import { TEventFractions } from 'app/entities/event/data/event-fractions.type';
 import { TEventFormType } from 'app/layouts/events/types/event-form.type';
-import { DAYS } from 'app/shared/data/const/days.const';
-import { FRACTIONS } from 'app/shared/data/const/fractions.const';
-import { ButtonToggleComponent } from 'app/shared/inputs/button-toggle/button-toggle.component';
-import { DatePickerComponent } from 'app/shared/inputs/date-picker/index/date-picker.component';
-import { TextInputComponent } from 'app/shared/inputs/text-input/text-input.component';
-import { TextareaComponent } from 'app/shared/inputs/textarea/textarea.component';
-import { TimePickerComponent } from 'app/shared/inputs/time-picker/index/time-picker/time-picker.component';
-import { ToggleInputComponent } from 'app/shared/inputs/toggle-input/toggle-input.component';
+import { DAYS } from 'app/shared/const/days.const';
+import { FRACTIONS } from 'app/shared/const/fractions.const';
+import { ButtonToggleComponent } from 'app/shared/components/controls/button-toggle/button-toggle.component';
+import { DatePickerComponent } from 'app/shared/components/controls/date-picker/date-picker/date-picker.component';
+import { TextInputComponent } from 'app/shared/components/controls/text-input/text-input.component';
+import { TextareaComponent } from 'app/shared/components/controls/textarea/textarea.component';
+import { TimePickerComponent } from 'app/shared/components/controls/time-picker/time-picker/time-picker.component';
+import { ToggleInputComponent } from 'app/shared/components/controls/toggle-input/toggle-input.component';
 import { TOption } from 'app/shared/types/option.type';
 
 @Component({

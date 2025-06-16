@@ -1,4 +1,17 @@
+:host {
+  display: block;
+  width: 100%;
+}
+
 .time {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+
+  &-intervals {
+    flex: 1;
+  }
+
   &-icon {
     width: 3rem;
     height: 3rem;

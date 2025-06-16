@@ -1,9 +1,9 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
-import { TabsRoutingPanelComponent } from '../../../../shared/components/tabs-panel/index/tabs-routing-panel.component';
-import { TabComponent } from '../../../../shared/components/tabs-panel/components/tab/tab.component';
+import { TabsRoutingPanelComponent } from '../../../../shared/components/tabs-panel/tabs-routing-panel/tabs-routing-panel.component';
+import { TabComponent } from '../../../../shared/components/tabs-panel/tab/tab.component';
 import { EventsListComponent } from 'app/entities/event/ui/events-list/events-list.component';
 import { TEvent } from 'app/entities/event/types/event.type';
-import { EmptyComponent } from '../../../../shared/components/empty/empty.component';
+import { EmptyComponent } from '../../../../shared/components/no-data-message/empty.component';
 import { Router } from '@angular/router';
 
 @Component({

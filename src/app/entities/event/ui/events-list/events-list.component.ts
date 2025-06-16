@@ -8,7 +8,7 @@ import {
   OutputEmitterRef,
 } from '@angular/core';
 import { TEvent } from 'app/entities/event/types/event.type';
-import { IconComponent } from 'app/shared/components/icon/icon.component';
+import { IconComponent } from 'app/shared/components/icon-wrapper/icon.component';
 
 @Component({
   selector: 'syncro-events-list',

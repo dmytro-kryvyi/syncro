@@ -7,7 +7,7 @@ import {
   InputSignal,
   Signal,
 } from '@angular/core';
-import { BaseControlValueAccessor } from 'app/core/base/control-value-accessor';
+import { BaseControlValueAccessor } from 'app/shared/base/control-value-accessor';
 import { TAvailabilityMatrix } from 'app/entities/survey/types/availability-matrix.type';
 import { TimeIntervalsComponent } from '../time-intervals/time-intervals.component';
 

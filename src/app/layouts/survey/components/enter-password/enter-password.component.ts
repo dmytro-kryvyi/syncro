@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, output, OutputEmitterRef } from '@angular/core';
 import { FormControl, ReactiveFormsModule, Validators } from '@angular/forms';
-import { PasswordInputComponent } from 'app/shared/inputs/password-input/password-input.component';
+import { PasswordInputComponent } from 'app/shared/components/controls/password-input/password-input.component';
 
 @Component({
   selector: 'syncro-enter-password',

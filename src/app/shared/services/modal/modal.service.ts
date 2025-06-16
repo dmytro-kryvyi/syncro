@@ -1,5 +1,5 @@
 import { Injectable, Type } from '@angular/core';
-import { ModalRef } from 'app/shared/modal/model/modal-ref';
+import { ModalRef } from 'app/shared/base/modal/modal-ref';
 import { Observable, Subject, take } from 'rxjs';
 
 @Injectable({

@@ -7,7 +7,7 @@ import {
   signal,
   WritableSignal,
 } from '@angular/core';
-import { IconComponent } from 'app/shared/components/icon/icon.component';
+import { IconComponent } from 'app/shared/components/icon-wrapper/icon.component';
 
 @Component({
   selector: 'syncro-calendar-selector',
